@@ -22,6 +22,21 @@
 
   /** @type {Array<{ name: string, icon: string, iconUrl: string, color: string, colorCode: string, cookieStoreId: string }>} */
   const contexts = await browser.contextualIdentities.query({});
+  contexts.sort(function(a, b) {
+    // ignore upper and lowercase
+    var nameA = a.name.toUpperCase();
+    var nameB = b.name.toUpperCase();
+    // sort by name
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+    // names must be equal
+    return 0;
+  });
+  contexts.forEach(context => { context.name = context.name.replace('Kunde ', '') });
 
   /** @type {HTMLUListElement} */
   const ul = document.getElementById('container-list');

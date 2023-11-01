@@ -18,11 +18,21 @@
 
 #container-list {
   list-style: none;
-  max-width: 40rem;
+  margin: 0;
+  padding: 0;
+  width: 48rem;
+}
+
+#container-list li {
+  margin: 0;
+  padding: 0
 }
 
 #container-list button {
-  margin-right: 10px;
+  margin: 0 1rem 1rem 0;
+  width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 #container-list button i {

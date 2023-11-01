@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Always In Container",
+  "name": "Always In Container (Extended by Claudio Spizzi)",
   "description": "__MSG_extensionDescription__",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "default_locale": "en",
   "icons": {
     "48": "icon.svg"
@@ -27,7 +27,7 @@
   "incognito": "not_allowed",
   "applications": {
     "gecko": {
-      "id": "{a1e9543e-5f73-4763-b376-04e53fd12cbd}",
+      "id": "{7126af94-d625-4a3c-83f6-52cd6a34a7f1}",
       "strict_min_version": "57.0"
     }
   }
