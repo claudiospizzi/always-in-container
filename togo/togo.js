@@ -24,8 +24,17 @@
   const contexts = await browser.contextualIdentities.query({});
   contexts.sort(function(a, b) {
     // ignore upper and lowercase
+    var iconA = a.icon.toUpperCase();
+    var iconB = b.icon.toUpperCase();
     var nameA = a.name.toUpperCase();
     var nameB = b.name.toUpperCase();
+    // sort by icon
+    if (iconA < iconB) {
+      return 1;
+    }
+    if (iconA > iconB) {
+      return -1;
+    }
     // sort by name
     if (nameA < nameB) {
       return -1;
@@ -36,7 +45,7 @@
     // names must be equal
     return 0;
   });
-  contexts.forEach(context => { context.name = context.name.replace('Kunde ', '') });
+  // contexts.forEach(context => { context.name = context.name.replace('Kunde ', '') });
 
   /** @type {HTMLUListElement} */
   const ul = document.getElementById('container-list');
@@ -71,7 +80,7 @@
       span.innerHTML = '';
       if (name.toLowerCase().startsWith(contextPrefix)) {
         if (contextPrefix.length) {
-          const prefix = document.createElement('i');
+          const prefix = document.createElement('span');
           prefix.className = 'container-name-match';
           prefix.textContent = name.slice(0, contextPrefix.length);
           span.appendChild(prefix);

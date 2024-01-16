@@ -28,6 +28,10 @@
   padding: 0
 }
 
+#container-list li span.container-name-match {
+  background-color: yellow;
+}
+
 #container-list button {
   margin: 0 1rem 1rem 0;
   width: 15rem;
