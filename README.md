@@ -1,17 +1,17 @@
-# Always In Container
+# Always In Container 2
 
-Chose a container every time you try to open a page out of a container
+This Add-On optimizes the original Always In Container Add-On for Firefox. The original Add-On can be found here: [tiansh/always-in-container](https://github.com/tiansh/always-in-container).
 
-[Get it from AMO](https://addons.mozilla.org/en-US/firefox/addon/always-in-container/?src=external-github-readme)
+Optimizations:
 
-To keep this extension simple, no feature request would be accepted.
+* Better more consistent layout
+* Sorting of containers by icon and then by name (with this, the containers are categorized by icon)
+* Highlighting of the typed and matched keys
 
 ## Credit
 
-This extension used some source codes from following open source projects:
+This extension used some source codes from following open source projects which were created and developed by Mozilla and its contributors.:
 
+* [tiansh/always-in-container](https://github.com/tiansh/always-in-container).
 * [Multi-Account Containers](https://github.com/mozilla/multi-account-containers)
 * [Facebook Container](https://github.com/mozilla/contain-facebook)
-
-which were created and developed by Mozilla and its contributers.
-
