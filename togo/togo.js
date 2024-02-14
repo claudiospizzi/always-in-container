@@ -139,6 +139,9 @@
     const li = document.createElement('li');
     const button = document.createElement('button');
     button.type = 'button';
+    if (context.name === 'Default') {
+      button.className = 'default';
+    }
     li.appendChild(button);
 
     /*

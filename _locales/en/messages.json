@@ -8,15 +8,11 @@
     "description": "Page title in tab for select page"
   },
   "selectTitleText": {
-    "message": "Open this page in container...",
+    "message": "Always in Container",
     "description": "Title of select container page."
   },
-  "selectDescriptionBeforeUrl": {
-    "message": "You are going to open",
+  "selectDescription": {
+    "message": "You are going to open the following url, which container do you want to use?",
     "description": "Description of select container; Before the url"
-  },
-  "selectDescriptionAfterUrl": {
-    "message": "Which container would you prefer",
-    "description": "Description of select container; After the url"
   }
 }
